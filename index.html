@@ -1,141 +1,125 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go High Level Bookmarks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    .container {
+      margin: 20px;
+    }
+    .bookmark-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .bookmark-item {
+      background-color: white;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .bookmark-item a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+    .bookmark-item p {
+      color: #555;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Go High Level Bookmarks&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #f4f4f4;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #4CAF50;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 1em;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.bookmark-list {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>list-style-type: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.bookmark-item {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 10px 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.bookmark-item a {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #4CAF50;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.bookmark-item p {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #555;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 1em;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>position: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>bottom: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Go High Level Bookmarks&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Your quick links to essential Go High Level tools&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul class="bookmark-list" id="bookmark-list"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Bookmarks will be inserted here dynamically --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;© 2025 Jack Schofield - Aspect Studio&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>// List of bookmarks with their name, URL, and description</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const bookmarks = [</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{</p>
-<p class="p1"><span class="Apple-converted-space">        </span>name: 'Add More Fields for Contact Import',</p>
-<p class="p1"><span class="Apple-converted-space">        </span>url: 'https://app.gohighlevel.com/v2/location/IYjyc7Efk0yAOzpSO9FM/settings/fields',</p>
-<p class="p1"><span class="Apple-converted-space">        </span>description: 'Quick access to add more fields for importing contacts into Go High Level.'</p>
-<p class="p1"><span class="Apple-converted-space">      </span>},</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{</p>
-<p class="p1"><span class="Apple-converted-space">        </span>name: 'Add a New User to Team',</p>
-<p class="p1"><span class="Apple-converted-space">        </span>url: 'https://app.gohighlevel.com/v2/location/IYjyc7Efk0yAOzpSO9FM/settings/staff/team',</p>
-<p class="p1"><span class="Apple-converted-space">        </span>description: 'Manage your team members by adding new users to your Go High Level account.'</p>
-<p class="p1"><span class="Apple-converted-space">      </span>},</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{</p>
-<p class="p1"><span class="Apple-converted-space">        </span>name: 'Main Dashboard',</p>
-<p class="p1"><span class="Apple-converted-space">        </span>url: 'https://app.gohighlevel.com/v2/location/IYjyc7Efk0yAOzpSO9FM/dashboard',</p>
-<p class="p1"><span class="Apple-converted-space">        </span>description: 'Access your main dashboard to monitor key metrics and activities.'</p>
-<p class="p1"><span class="Apple-converted-space">      </span>},</p>
-<p class="p1"><span class="Apple-converted-space">      </span>// Add more bookmarks here if needed</p>
-<p class="p1"><span class="Apple-converted-space">    </span>];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Function to render the bookmarks to the page</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function renderBookmarks() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const bookmarkListElement = document.getElementById('bookmark-list');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>bookmarkListElement.innerHTML = ''; // Clear the existing list</p>
-<p class="p1"><span class="Apple-converted-space">      </span>bookmarks.forEach(bookmark =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const listItem = document.createElement('li');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>listItem.classList.add('bookmark-item');</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const link = document.createElement('a');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>link.href = bookmark.url;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>link.target = '_blank';</p>
-<p class="p1"><span class="Apple-converted-space">        </span>link.textContent = bookmark.name;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const description = document.createElement('p');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>description.textContent = bookmark.description;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>listItem.appendChild(link);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>listItem.appendChild(description);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>bookmarkListElement.appendChild(listItem);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Function to add a new bookmark</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function addBookmark(name, url, description) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>bookmarks.push({ name, url, description });</p>
-<p class="p1"><span class="Apple-converted-space">      </span>renderBookmarks(); // Re-render the bookmarks list to include the new one</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Initial render</p>
-<p class="p1"><span class="Apple-converted-space">    </span>renderBookmarks();</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Example of how to add a new bookmark dynamically (you can call this function from the console or your own form):</p>
-<p class="p1"><span class="Apple-converted-space">    </span>// addBookmark('New Bookmark', 'https://example.com', 'Description of the new bookmark');</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <header>
+    <h1>Go High Level Bookmarks</h1>
+    <p>Your quick links to essential Go High Level tools</p>
+  </header>
+
+  <div class="container">
+    <ul class="bookmark-list" id="bookmark-list">
+      <!-- Bookmarks will be inserted here dynamically -->
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2025 Jack Schofield - Aspect Studio</p>
+  </footer>
+
+  <script>
+    // List of bookmarks with their name, URL, and description
+    const bookmarks = [
+      {
+        name: 'Add More Fields for Contact Import',
+        url: 'https://app.gohighlevel.com/v2/location/IYjyc7Efk0yAOzpSO9FM/settings/fields',
+        description: 'Quick access to add more fields for importing contacts into Go High Level.'
+      },
+      {
+        name: 'Add a New User to Team',
+        url: 'https://app.gohighlevel.com/v2/location/IYjyc7Efk0yAOzpSO9FM/settings/staff/team',
+        description: 'Manage your team members by adding new users to your Go High Level account.'
+      },
+      {
+        name: 'Main Dashboard',
+        url: 'https://app.gohighlevel.com/v2/location/IYjyc7Efk0yAOzpSO9FM/dashboard',
+        description: 'Access your main dashboard to monitor key metrics and activities.'
+      },
+      // Add more bookmarks here if needed
+    ];
+
+    // Function to render the bookmarks to the page
+    function renderBookmarks() {
+      const bookmarkListElement = document.getElementById('bookmark-list');
+      bookmarkListElement.innerHTML = ''; // Clear the existing list
+      bookmarks.forEach(bookmark => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('bookmark-item');
+        
+        const link = document.createElement('a');
+        link.href = bookmark.url;
+        link.target = '_blank';
+        link.textContent = bookmark.name;
+        
+        const description = document.createElement('p');
+        description.textContent = bookmark.description;
+        
+        listItem.appendChild(link);
+        listItem.appendChild(description);
+        bookmarkListElement.appendChild(listItem);
+      });
+    }
+
+    // Function to add a new bookmark
+    function addBookmark(name, url, description) {
+      bookmarks.push({ name, url, description });
+      renderBookmarks(); // Re-render the bookmarks list to include the new one
+    }
+
+    // Initial render
+    renderBookmarks();
+    
+    // Example of how to add a new bookmark dynamically (you can call this function from the console or your own form):
+    // addBookmark('New Bookmark', 'https://example.com', 'Description of the new bookmark');
+  </script>
 </body>
 </html>
